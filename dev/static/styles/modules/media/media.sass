@@ -1,0 +1,147 @@
+@media (max-width: 992px)
+	header 
+
+		.container
+			justify-content: space-between
+		
+		.nav 
+			margin-left: 0
+			
+			.nav__list
+				flex-direction: column
+				justify-content: center
+
+			.nav__item
+				margin-right: 0
+
+		.profile__nav
+			margin-left: 0
+
+	.content 
+		
+		.container
+			flex-wrap: wrap
+			flex-direction: column
+
+	main
+		width: 100%
+		margin-right: 0
+		margin-bottom: 25px
+
+	aside
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		flex-basis: auto
+		min-width: 0
+
+		.content__block
+			width: calc(50% - 12.5px)
+			margin-right: 12.5px
+
+		.content__block:nth-child(2n)
+			width: calc(50% - 12.5px)
+			margin-left: 12.5px
+			margin-right: 0
+
+	footer
+		
+		.footer__contacts
+			flex-direction: column
+			justify-content: center
+
+			.footer__contacts-item
+				margin-right: 0
+				margin-bottom: 10px
+				text-align: center
+
+		.footer__copy
+			margin-top: 15px
+			text-align: center
+			width: 100%
+
+@media (min-width: 576px)
+	header 
+		
+		.nav
+			display: block !important
+
+@media (max-width: 576px)
+	a.open__nav
+		display: block
+
+	header 
+		
+		.nav
+			display: none
+			background: #fff
+			justify-content: flex-start
+			left: 0
+			right: 0
+			position: absolute
+			top: 108px
+			box-shadow: 0 0 20px rgba(0,0,0,.05)
+
+			.nav__link
+				padding: 15px
+				font-size: 18px
+
+		.profile__nav 
+			
+			.profile__link
+				margin-right: 15px
+
+			.profile__push
+				margin-right: 15px
+
+	body.page-profile 
+		
+		.content__block.profile__content
+			flex-direction: column
+
+			.content__profile-img
+				margin-bottom: 15px
+				margin-right: 0
+				width: 100%
+				display: flex
+				justify-content: center
+
+				img
+					max-width: 100%
+
+		.block__list-data
+			margin: 0
+
+			.block__item
+				padding: 0
+				width: 100%
+				margin-bottom: 15px
+
+	aside
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+
+		.content__block
+			width: 100%
+			margin-right: 0
+			margin-left: 0
+
+		.content__block:nth-child(2n)
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+
+	footer 
+		
+		.container
+			flex-direction: column
+
+		.footer__logo
+			margin-bottom: 15px
+
+		.footer__contacts
+			margin-bottom: 15px
+
+		.footer__soc
+			text-align: center

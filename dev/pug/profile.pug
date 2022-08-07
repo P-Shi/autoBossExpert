@@ -1,0 +1,201 @@
+extends template/main
+
+block variables
+	- var title = 'Профиль'
+	- var pageClass = 'page-profile'
+
+block content
+	.container
+		main
+			.content__block.profile__content
+				.content__profile-img
+					img(src="static/images/content/profile.png", alt="")
+				.content__profile-info
+					.block__title Третьяков Сергей Александрович
+					.block__label
+						.block__label-item
+							+icon('icon__user')
+							p Эксперт
+						.block__label-item
+							+icon('icon__star')
+							p 200 баллов
+					.block__list-spec
+						.block__list-item
+							+icon('icon__users')
+							p 
+								strong Axis
+						.block__list-item
+							+icon('icon__spec')
+							p Директор по маркетингу
+						.block__list-item
+							+icon('icon__point')
+							p Санкт-Петербург, Россия
+					.block__tags
+						a.block__tags-link(href="#") #Citroen
+						a.block__tags-link(href="#") #Hyundai
+						a.block__tags-link(href="#") #Nokian
+						a.block__tags-link(href="#") #Маркетинг
+						a.block__tags-link(href="#") #Реклама
+						a.block__tags-link(href="#") #Официальный дилер
+					a.button.button--orange(href="#") Отправить сообщение
+			.content__block
+				.block__title Опыт работы в автобизнесе
+				.block__content
+					.block__list-exp
+						.block__item
+							img.block__item-img(src="static/images/content/exp__logo.png", alt="")
+							.block__item-info
+								.block__item-title Директор по маркетингу
+								.block__item-brand Axis
+								.block__item-worktime июль 2017 - настоящее время · 5 лет
+						.block__item
+							img.block__item-img(src="static/images/content/exp__logo.png", alt="")
+							.block__item-info
+								.block__item-title Директор по маркетингу
+								.block__item-brand Axis
+								.block__item-worktime июль 2017 - настоящее время · 5 лет
+			.content__block
+				.block__title Достижения в автобизнесе
+				.block__content
+					ul.list__star
+						li Лучший дилер Peugeot 2018 года
+						li Лучший дилер по продажам Citroën 2018 года
+						li Лучший дилер по продажам кредитных продуктов PSA Bank 2018 года
+						li Открытие дилерского центра Hyundai Axis в 2020 году
+						li Лучший дилер по продаже коммерческих автомобилей по итогам 2020 года
+			.content__block
+				.block__title Резюме
+				.block__content
+					p Нажмите, чтобы ознакомиться с резюме.
+					a.button(href="/") Посмотреть
+			.content__block
+				.block__title Чем я могу быть полезен сообществу
+				.block__content
+					ul
+						li Новые свежие идеи
+						li Оптимизация процессов
+						li Увеличение продаж
+			.content__block
+				.block__title Общие сведения
+				.block__content
+					p Люблю путешествовать, женат, воспитываю сына и дочь, люблю смотреть и играть в футбол. Открыт для всего нового.
+					.block__list-data
+						.block__item
+							.block__item-inner
+								+icon('icon__day')
+								.block__item-info
+									.block__item-label Дата рождения:
+									.block__item-value 24 февраля 1979
+						.block__item
+							.block__item-inner
+								+icon('icon__point')
+								.block__item-info
+									.block__item-label Местоположение:
+									.block__item-value Санкт-Петербург
+						.block__item
+							.block__item-inner
+								+icon('icon__mail')
+								.block__item-info
+									.block__item-label Email:
+									.block__item-value tretyakov@axis.spb.ru
+						.block__item
+							.block__item-inner
+								+icon('icon__phone')
+								.block__item-info
+									.block__item-label Телефон:
+									.block__item-value +7 (921) 338-37-72
+
+		aside
+			.content__block.profile__awards
+				.block__title Награды
+				.block__content
+					.block__list-awards
+						.block__item
+							+icon('icon__sert-gold')
+							.block__item-info
+								.block__item-title Золотой сертификат курсов АБ
+								.block__item-date 24 мая 2022
+						.block__item
+							+icon('icon__sert-silver')
+							.block__item-info
+								.block__item-title Серебряный сертификат курсов АБ
+								.block__item-date 24 мая 2022
+						.block__item
+							+icon('icon__sert-bronze')
+							.block__item-info
+								.block__item-title Бронзовый сертификат курсов АБ
+								.block__item-date 24 мая 2022
+						.block__item
+							+icon('icon__sert-user')
+							.block__item-info
+								.block__item-title Сертификат участника
+								.block__item-date 24 мая 2022
+					.block__hidden
+						.block__list-awards
+							.block__item
+								+icon('icon__spiker')
+								.block__item-info
+									.block__item-title Спикер 
+									.block__item-date 24 мая 2022
+							.block__item
+								+icon('icon__author-curs')
+								.block__item-info
+									.block__item-title Автор курса
+									.block__item-date 24 мая 2022
+							.block__item
+								+icon('icon__author-master')
+								.block__item-info
+									.block__item-title Автор мастер-класса
+									.block__item-date 24 мая 2022
+							.block__item
+								+icon('icon__author-metod')
+								.block__item-info
+									.block__item-title Автор методики
+									.block__item-date 24 мая 2022
+							.block__item
+								+icon('icon__author-book')
+								.block__item-info
+									.block__item-title Автор книги
+									.block__item-date 24 мая 2022
+					a.block__more(href="#") 
+
+			.content__block
+				.block__title Сертификаты
+				.block__content
+					.block__list-sert
+						.block__item
+							.block__item-img
+								img(src="static/images/content/sert_min.jpg", alt="")
+							.block__item-info
+								.block__item-title Золотой сертификат по курсу Директор по маркетингу
+								.block__item-desc Автобосс
+								.block__item-date 24 мая 2022
+								a.button(href="static/images/content/sert.jpg", data-fancybox) Показать
+						.block__item
+							.block__item-img
+								img(src="static/images/content/sert_min.jpg", alt="")
+							.block__item-info
+								.block__item-title Золотой сертификат по курсу Директор по маркетингу
+								.block__item-desc Автобосс
+								.block__item-date 24 мая 2022
+								a.button(href="static/images/content/sert.jpg", data-fancybox) Показать
+					.block__hidden
+						.block__list-sert
+							.block__item
+								.block__item-img
+									img(src="static/images/content/sert_min.jpg", alt="")
+								.block__item-info
+									.block__item-title Золотой сертификат по курсу Директор по маркетингу
+									.block__item-desc Автобосс
+									.block__item-date 24 мая 2022
+									a.button(href="static/images/content/sert.jpg", data-fancybox) Показать
+							.block__item
+								.block__item-img
+									img(src="static/images/content/sert_min.jpg", alt="",)
+								.block__item-info
+									.block__item-title Золотой сертификат по курсу Директор по маркетингу
+									.block__item-desc Автобосс
+									.block__item-date 24 мая 2022
+									a.button(href="static/images/content/sert.jpg", data-fancybox) Показать
+ 
+					a.block__more(href="#") 

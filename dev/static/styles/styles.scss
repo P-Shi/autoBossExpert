@@ -1,0 +1,191 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	height: 100%;
+	background: #F5F5F5
+}
+
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+	line-height: 18px;
+	min-width: 300px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd { margin: 0; }
+
+a:not([class]) { text-decoration-skip-ink: auto; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select { font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea { vertical-align: middle; }
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content { 
+	flex: 1 0 auto;
+	padding: 28px 0
+ }
+
+.container {
+  margin: 0 auto;
+  max-width: $content-size;
+	width: 100%;
+	padding: 0 15px
+}
+
+.content {
+	.container {
+		display: flex;
+	}
+	p{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	ul{
+		li{
+			padding-left: 15px;
+			position: relative;
+			margin-bottom: 13px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&:before{
+				content: '';
+				background: $orange;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 5px;
+			}
+		}
+	}
+	ul.list__star{
+		li{
+			padding-left: 18px;
+			position: relative;
+			margin-bottom: 13px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			&:before{
+				content: '★';
+				color: $orange;
+				display: block;
+				position: absolute;
+				width: auto;
+				height: auto;
+				background: transparent;
+				left: -2px;
+				top: 0px;
+			}
+		}
+	}
+}
+main{
+	flex: 1 0;
+	margin-right: 25px;
+	.content__block:last-child{
+		margin-bottom: 0;
+	}
+}
+.content__block{
+	background: #FFFFFF;
+	border-radius: 4px;
+	padding: 22px;
+	margin-bottom: 25px;
+
+	.block__title{
+		color: #1C1D1F;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 18px;
+	}
+}
+aside{
+	width: 356px;
+	flex-basis: 356px;
+	min-width: 356px;
+	.content__block:last-child{
+		margin-bottom: 0;
+	}
+}
+
+
+//Модули
+@import "modules/modules";
