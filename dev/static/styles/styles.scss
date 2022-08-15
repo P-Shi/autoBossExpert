@@ -90,6 +90,7 @@ button { outline: none; }
 	flex: 1 0 auto;
 	padding: 28px 0;
 	background: transparent;
+	line-height: normal;
  }
 
 .container {
@@ -100,7 +101,7 @@ button { outline: none; }
 }
 
 .content {
-	.container {
+	.page-inner {
 		display: flex;
 	}
 	p{
@@ -175,7 +176,18 @@ main{
 		font-size: 20px;
 		line-height: 24px;
 		margin-bottom: 18px;
+		font-family: $base-font-family;
+		
 	}
+	.block__subtitle {
+		color: #1C1D1F;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		margin-bottom: 12px;
+		font-family: $base-font-family;
+	}
+
 }
 aside{
 	width: 356px;

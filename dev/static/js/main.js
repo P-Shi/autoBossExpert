@@ -62,3 +62,36 @@ $(document).ready(function(){
 		$('header .nav').slideToggle()
 	})
 })
+$(document).ready(function() {
+	$('select.select').select2({
+		minimumResultsForSearch: Infinity
+	});
+});
+// $('.input__show-button').each(function() {
+// 	console.log($(this).data('view'));
+// 	console.log($('[data-field='+$(this).data('view')+']').val());
+// });
+$(document).on('click', '.input__show-button', function(e){
+	e.preventDefault()
+	$(this).find('.svg-sprite-icon').removeClass('selected')
+	if($('[data-field='+$(this).data('view')+']').val() == 0) {
+		$('[data-field='+$(this).data('view')+']').val(1)
+		$(this).find('.icon__eye-show').addClass('selected')
+	} else {
+		$('[data-field='+$(this).data('view')+']').val(0)
+		$(this).find('.icon__eye-hide').addClass('selected')
+	}
+	$('.show__label').text($(this).find('.selected').data('text'))
+	$('[data-field='+$(this).data('view')+']').change()
+})
+$('.input__show-button').hover(function(){
+	$(this).append('<span class="show__label"></span>')
+	$('.show__label').text($(this).find('.selected').data('text'))
+}, function(){
+	$('.show__label').remove()
+})
+$(document).on('change', '.input__birthday-day, .input__birthday-month, .input__birthday-year', function(){
+	$('[data-field=f_birthday]').val($('.input__birthday-year').val()+'-'+$('.input__birthday-month').val()+'-'+$('.input__birthday-day').val())
+	console.log($('.input__birthday-day').val()+'.'+$('.input__birthday-month').val()+'.'+$('.input__birthday-year').val());
+	
+})

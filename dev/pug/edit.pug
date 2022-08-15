@@ -1,0 +1,75 @@
+extends template/main
+
+block variables
+	- var title = 'Редактирование профиля'
+	- var pageClass = 'page-lk'
+
+block content
+	.container
+		div(class="page-inner "+pageClass)
+			main
+				.content__block
+					.block__title Базовые данные
+					.row__input
+						.input__item
+							h4 Имя *
+							input(type="text")
+						.input__item
+							h4 Имя *
+							input(type="text")
+						.input__item
+							h4 Имя *
+							input(type="text")
+
+					.row__input
+						.input__item
+							h4 День рождения
+							select.select
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+						.input__item
+							h4 Страна
+							select.select
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+						.input__item
+							h4 Город
+							select.select
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+								option(value="Январь") Январь
+								option(value="Январь") Февраль
+
+			aside
+				nav.aside
+					ul.aside__list
+						li.aside__item
+							a.aside__link(href="#")
+								+icon("icon__users")
+								span.aside__title Компании
+						li.aside__item
+							a.aside__link(href="#")
+								+icon("icon__user")
+								span.aside__title Профиль
+						li.aside__item
+							a.aside__link(href="#")
+								+icon("icon__quest")
+								span.aside__title Вопросы
+						li.aside__item
+							a.aside__link(href="#")
+								+icon("icon__mail")
+								span.aside__title Сообщения
+						li.aside__item
+							a.aside__link(href="#")
+								+icon("icon__logout")
+								span.aside__title Выход
