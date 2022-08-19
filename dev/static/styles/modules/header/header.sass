@@ -98,6 +98,59 @@ header
 				border-radius: 50%
 				transition-duration: $trds
 
+	.profile__auth
+		margin-left: auto
+		display: flex
+		align-items: center
+
+		.profile__link
+			margin-left: 10px
+			height: 40px
+			width: 146px
+			font-size: 15px
+
+			&:hover
+				
+				svg
+					fill: $orange
+
+			svg
+				width: 24px
+				height: 24px
+				fill: #8E8E8E
+				transition-duration: $trds
+
+		.profile__push
+			margin-right: 35px
+
+			&:hover
+				
+				svg
+					fill: $orange
+
+			svg
+				width: 24px
+				height: 24px
+				fill: #8E8E8E
+				transition-duration: $trds
+
+		.profile__ava
+			min-width: 48px
+
+			&:hover
+				
+				.profile__ava-img
+					box-shadow: 0 0 20px rgba(0,0,0,.1)
+
+			.profile__ava-img
+				display: block
+				width: 48px
+				height: 48px
+				border-radius: 50%
+				transition-duration: $trds
+
+	
+
 a.open__nav
 	text-transform: uppercase
 	color: #ffffff

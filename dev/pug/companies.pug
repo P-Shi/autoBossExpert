@@ -1,0 +1,164 @@
+extends template/main
+
+block variables
+	- var title = 'Компании'
+	- var pageClass = 'page-comps'
+
+block content
+	.container
+		div(class="page-inner "+pageClass)
+			main
+				.comps__wrap
+					.comps__bar
+						h1 Компании
+						.comps__count 25
+						a.button.button--orange.comps__create.js_popup(href="#sms") Создать новую компанию
+					.comps__nav
+						.comps__search
+							form.comps__form
+								input(type="text").comps__form-input
+								button(type="submit").comps__form-button
+									+icon("icon__search")
+						.comps__sort
+							select.select
+								option(value="По алфавиту") По алфавиту
+								option(value="По рейтингу") По рейтингу
+							.comps__view
+								a.comps__view-item.active(href="#")
+									+icon("icon__view-list")
+								a.comps__view-item(href="#")
+									+icon("icon__view-table")
+					.comps__list.list
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						.comps__item
+							.comps__item-inner
+								.comps__item-photo
+									img.comps__item-img(src="../static/images/content/profile.png")
+								.comps__item-info
+									.comps__item-title Axis
+									.comps__item-rating
+										.comps__item-rating-count 4.5
+										.comps__item-rating-stars
+											.comps__item-rating-stars.active(style="width: 90%")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+												+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+											+icon("icon__start")
+						
+					.pagination
+						a.pagination-link(href="#")
+							+icon("icon__arrow-l")
+						a.pagination-link(href="#") 1
+						a.pagination-link(href="#") 2
+						a.pagination-link.active(href="#") 3
+						a.pagination-link(href="#") 4
+						a.pagination-link(href="#")
+							+icon("icon__arrow-r")
+
+			aside
+				.lk_tag_box

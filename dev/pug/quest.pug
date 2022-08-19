@@ -1,0 +1,181 @@
+extends template/main
+
+block variables
+	- var title = 'Редактирование профиля'
+	- var pageClass = 'page-quest'
+
+block content
+	.container
+		div(class="page-inner "+pageClass)
+			main
+				.quest__wrap
+					.quest__bar
+						h1 Публичные вопросы
+						.quest__count 25
+						a.button.button--orange.quest__create.js_popup(href="#sms") Создать вопрос
+					.quest__nav
+						.quest__search
+							form.quest__form
+								input(type="text").quest__form-input
+								button(type="submit").quest__form-button
+									+icon("icon__search")
+					.quest__list
+						.quest__item
+							.quest__item-inner
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+										.quest__nav-icon
+											a.quest__nav-edit(href="#")
+												+icon("icon__q-edit")
+											a.quest__nav-del(href="#")
+												+icon("icon__q-del")
+									.quest__item-tags
+										a.quest__tags-link(href="#") #Беларусь
+										a.quest__tags-link(href="#") #Минск
+										a.quest__tags-link(href="#") #Автобизнес
+									.quest__item-q Как сейчас дела в автобизнесе?
+										.quest__item-like
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+									.quest__item-files
+										.quest__item-file
+											a.quest__file-img-link(href="../static/images/content/image.jpg",data-fancybox)
+												img.quest__file-img(src="../static/images/content/image.jpg", alt="")
+											a.quest__file-link(href="#")
+												+icon("icon__file")
+												span Файл.pdf
+							.quest__item-inner.quest__answer
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+									.quest__item-q Основной фокус сейчас — на сервисе, автомобилях с пробегом и их качественной предпродажной подготовке, в том числе с применением детейлинга.
+										.quest__item-like
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+							.quest__item-inner.quest__answer
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+									.quest__item-q Основной фокус сейчас — на сервисе, автомобилях с пробегом и их качественной предпродажной подготовке, в том числе с применением детейлинга.
+										.quest__item-like
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+							.quest__item-inner.quest__answer
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+									.quest__item-q Основной фокус сейчас — на сервисе, автомобилях с пробегом и их качественной предпродажной подготовке, в том числе с применением детейлинга.
+										.quest__item-like
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+							.quest__item-add
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								form.quest__add(action="#")
+									textarea.height__auto.quest__add-input
+									button(type="submit").quest__add-button.button Отправить
+						.quest__item
+							.quest__item-inner
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+										.quest__nav-icon
+											a.quest__nav-edit(href="#")
+												+icon("icon__q-edit")
+											a.quest__nav-del(href="#")
+												+icon("icon__q-del")
+									.quest__item-tags
+										a.quest__tags-link(href="#") #Беларусь
+										a.quest__tags-link(href="#") #Минск
+										a.quest__tags-link(href="#") #Автобизнес
+									.quest__item-q Как сейчас дела в автобизнесе?
+										.quest__item-like.checked
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+									.quest__item-files
+										.quest__item-file
+											a.quest__file-img-link(href="#")
+												img.quest__file-img(src="../static/images/content/image.jpg", alt="")
+											a.quest__file-link(href="#")
+												+icon("icon__file")
+												span Файл.pdf
+							.quest__item-inner.quest__answer
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+									.quest__item-q Как сейчас дела в автобизнесе?
+										.quest__item-like.checked
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+									.quest__item-files
+										.quest__item-file
+											a.quest__file-img-link(href="#")
+												img.quest__file-img(src="../static/images/content/image.jpg", alt="")
+											a.quest__file-link(href="#")
+												+icon("icon__file")
+												span Файл.pdf
+							.quest__item-inner.quest__answer
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								.quest__item-info
+									.quest__item-header
+										.quest__item-name Сергей Третьяков
+										.quest__item-date 11 августа 2022 в 18:20
+									.quest__item-q Основной фокус сейчас — на сервисе, автомобилях с пробегом и их качественной предпродажной подготовке, в том числе с применением детейлинга.
+										.quest__item-like.checked
+											.quest__like-link
+												+icon("icon__like")
+												span 123
+							.quest__item-add
+								.quest__item-photo
+									img.quest__item-img(src="../static/images/content/profile.png", alt="")
+								form.quest__add(action="#")
+									input(type="text").quest__add-input
+									button(type="submit").quest__add-button.button Отправить
+					.pagination
+						a.pagination-link(href="#")
+							+icon("icon__arrow-l")
+						a.pagination-link(href="#") 1
+						a.pagination-link(href="#") 2
+						a.pagination-link.active(href="#") 3
+						a.pagination-link(href="#") 4
+						a.pagination-link(href="#")
+							+icon("icon__arrow-r")
+
+			aside
+				.lk_tag_box
+
+	.popup(id="sms")
+		.popup__wrap
+			a.popup__close(href="#")
+				+icon("icon__close")
+			.popup__title Создание новой компании
+			.popup__subtitle Подтвердите номер телефона
+			form.popup__form(action="#")
+				input(type="text",placeholder="Введите код из sms").popup__input
+				button(type="submit").popup__button.button.button--orange Отправить

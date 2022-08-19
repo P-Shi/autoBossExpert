@@ -21,10 +21,14 @@ header.header
 				li.nav__item
 					a.nav__link(href="#") Публичные вопросы
 
-		.profile__nav
-			a.profile__link(href="#")
-				+icon('profile__setting')
-			a.profile__push(href="#")
-				+icon('profile__push')
-			a.profile__ava(href="#")
-				img(src="static/images/content/profile.png",alt="",class="profile__ava-img")
+		//- .profile__nav
+		//- 	a.profile__link(href="#")
+		//- 		+icon('profile__setting')
+		//- 	a.profile__push(href="#")
+		//- 		+icon('profile__push')
+		//- 	a.profile__ava(href="#")
+		//- 		img(src="static/images/content/profile.png",alt="",class="profile__ava-img")
+
+		.profile__auth
+			a.profile__link.button(href="#") Регистрация
+			a.profile__link.button.button--orange(href="#") Вход

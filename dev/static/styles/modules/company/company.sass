@@ -1,0 +1,213 @@
+div.page-profile
+	
+	.content__block.profile__content
+		display: flex
+
+		.content__profile-img
+			width: 128px
+			margin-right: 23px
+
+			img
+				width: 128px
+				border-radius: 50%
+
+		.content__profile-info
+			flex: 1 0
+
+			.block__label
+				display: flex
+				flex-wrap: wrap
+				margin-bottom: 25px
+
+				.block__label-item
+					display: flex
+					align-items: center
+					margin-right: 70px
+					font-weight: 700
+
+					&:last-child
+						margin-right: 0
+
+					svg
+						width: 13px
+						height: 13px
+						fill: $orange
+						margin-right: 10px
+
+			.block__list-spec
+				margin-bottom: 20px
+
+				.block__list-item
+					display: flex
+					margin-bottom: 12px
+					color: #8E8E8E
+
+					strong
+						color: #1C1D1F
+
+					&:last-child
+						margin-bottom: 0
+
+					svg
+						width: 15px
+						height: 15px
+						margin-right: 10px
+						fill: #8E8E8E
+
+			.block__tags
+				display: flex
+				flex-wrap: wrap
+				margin-bottom: 20px
+
+				.block__tags-link
+					text-decoration: none
+					color: $orange
+					margin-right: 7px
+					font-size: 13px
+					line-height: 16px
+
+	.block__list-exp
+
+		.block__item
+			display: flex
+			margin-bottom: 20px
+			align-items: flex-start
+
+			&:last-child
+				margin-bottom: 0
+
+		.block__item-img
+			margin-right: 20px
+
+		.block__item-info
+			flex: 1 0
+
+		.block__item-title
+			font-weight: 600
+			font-size: 17px
+			line-height: 21px
+			color: #1C1D1F
+			margin-bottom: 15px
+
+		.block__item-brand
+			margin-bottom: 8px
+
+		.block__item-worktime
+			color: #8E8E8E
+
+	.block__list-data
+		margin-left: -12.5px
+		margin-right: -12.5px
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: -25px
+
+		.block__item
+			padding-left: 12.5px
+			padding-right: 12.5px
+			width: 50%
+			margin-bottom: 25px
+
+		.block__item-inner
+			border: 1px solid rgba(0, 0, 0, 0.1)
+			border-radius: 4px
+			padding: 14px 14px 14px 40px
+			position: relative
+			display: flex
+			height: 100%
+
+			svg
+				fill: #8E8E8E
+				width: 15px
+				height: 15px
+				position: absolute
+				top: 14px
+				left: 14px
+
+		.block__item-info
+			display: flex
+			flex-wrap: wrap
+		
+		.block__item-label
+			color: #8E8E8E
+			margin-right: 5px
+
+	.block__list-awards
+
+		.block__item
+			display: flex
+			margin-bottom: 20px
+
+			svg
+				width: 27px
+				height: 27px
+				margin-right: 20px
+				margin-top: 3px
+
+			.block__item-info
+				display: flex
+				flex-direction: column
+				flex: 1 0
+
+			.block__item-title
+				font-weight: 600
+				color: #1C1D1F
+				margin-bottom: 2px
+
+			.block__item-date
+				font-size: 13px
+				line-height: 16px
+				color: #8E8E8E
+	
+	.block__list-sert
+
+		.block__item
+			display: flex
+			margin-bottom: 20px
+
+			.block__item-img
+				margin-right: 20px
+
+			svg
+				width: 27px
+				height: 27px
+				margin-right: 20px
+				margin-top: 3px
+
+			.block__item-info
+				display: flex
+				flex-direction: column
+				flex: 1 0
+
+			.block__item-title
+				font-weight: 600
+				color: #1C1D1F
+				margin-bottom: 14px
+
+			.block__item-desc
+				margin-bottom: 10px
+
+			.block__item-date
+				font-size: 13px
+				line-height: 16px
+				color: #8E8E8E
+				margin-bottom: 17px
+
+	.block__hidden
+		display: none
+
+	.block__more
+		display: block
+		text-align: center
+		color: #8E8E8E
+
+		&.open
+		
+			&::before
+				content: 'Свернуть'
+		
+		&::before
+			content: 'Смотреть еще'
+
+		&:hover
+			text-decoration: none

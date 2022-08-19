@@ -92,6 +92,81 @@ $('.input__show-button').hover(function(){
 })
 $(document).on('change', '.input__birthday-day, .input__birthday-month, .input__birthday-year', function(){
 	$('[data-field=f_birthday]').val($('.input__birthday-year').val()+'-'+$('.input__birthday-month').val()+'-'+$('.input__birthday-day').val())
-	console.log($('.input__birthday-day').val()+'.'+$('.input__birthday-month').val()+'.'+$('.input__birthday-year').val());
+	$('[data-field=f_birthday]').change()
+	//console.log($('.input__birthday-day').val()+'.'+$('.input__birthday-month').val()+'.'+$('.input__birthday-year').val());
 	
+})
+
+// $("textarea.height__auto").each(function () {
+//   this.setAttribute("style", "height:" + (this.scrollHeight) + "px;");
+// }).on("input", function () {
+//   this.style.height = "auto";
+//   this.style.height = (this.scrollHeight) + "px";
+// });
+
+$(document).on('click', '.input__show-password', function(e){
+	e.preventDefault()
+	$(this).toggleClass('active')
+	if($(this).prev().attr('type') == 'text') {
+		$(this).prev().attr('type','password')
+	} else {
+		$(this).prev().attr('type','text')
+	}
+	// if($(this).hasClass('active')) {
+	// 	$(this).prev().attr('type','password')
+	// } else {
+	// 	$(this).prev().attr('type','text')
+	// }
+})
+
+$(document).on('change', 'input[name=select_type-f]', function(){
+ 
+	if($('input[name=select_type-f]:checked').val() == 'phone') {
+		$(this).parent().parent().parent().find('form').hide()
+		$(this).parent().parent().parent().find('form.auth_form-phone').show()
+	}
+	if($('input[name=select_type-f]:checked').val() == 'mail') {
+		$(this).parent().parent().parent().find('form').hide()
+		$(this).parent().parent().parent().find('form.auth_form-mail').show()
+	}
+})
+
+$(document).on('change', 'input[name=select_type]', function(){
+ 
+	if($('input[name=select_type]:checked').val() == 'phone') {
+		$(this).parent().parent().parent().find('form').hide()
+		$(this).parent().parent().parent().find('form.auth_form-phone').show()
+	}
+	if($('input[name=select_type]:checked').val() == 'mail') {
+		$(this).parent().parent().parent().find('form').hide()
+		$(this).parent().parent().parent().find('form.auth_form-mail').show()
+	}
+})
+
+$(document).on('click', '.forgot-phone', function(e){
+	e.preventDefault()
+
+	$('.auth_form-login').hide()
+	$('.auth_form-forgot').show()
+	$('.auth_form-phone').show()
+})
+
+$(document).on('click', '.forgot-mail', function(e){
+	e.preventDefault()
+
+
+	$('.auth_form-login').hide()
+	$('.auth_form-forgot').show()
+	$('.auth_form-phone').show()
+})
+
+$(document).on('click', '.js_popup', function(e){
+	e.preventDefault()
+	//console.log($(this).attr('href'))
+	$('.popup'+$(this).attr('href')).addClass('popup__show')
+})
+
+$(document).on('click', '.popup__close', function(e){
+	e.preventDefault()
+	$('.popup').removeClass('popup__show')
 })

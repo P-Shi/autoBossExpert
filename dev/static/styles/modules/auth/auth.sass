@@ -1,0 +1,372 @@
+div.auth_form
+	background: #FFFFFF
+	border-radius: 4px
+	width: 100%
+	max-width: 595px
+	padding: 50px 108px
+	margin-left: auto
+	margin-right: auto
+
+	label
+		margin-bottom: 15px
+		display: block
+
+	.label_title
+		font-size: 13px
+		line-height: 16px
+		color: #8E8E8E
+		margin-bottom: 11px
+		display: block
+	
+	input[type=text], input[type=password]
+		background: #FFFFFF
+		border: 1px solid rgba(0, 0, 0, 0.1)
+		border-radius: 4px
+		height: 46px
+		padding-left: 17px
+		padding-right: 17px
+		font-family: $base-font-family
+		font-size: 15px
+
+	.button
+		height: 46px
+		width: 100%
+
+	.no_account
+		font-size: 13px
+		line-height: 16px
+		color: #1C1D1F
+		text-align: center
+		margin-bottom: 20px
+
+		a
+			text-decoration: none
+			color: $orange
+
+	h2
+		font-weight: 700
+		font-size: 24px
+		line-height: 29px
+		color: #1C1D1F
+		text-align: center
+		margin-bottom: 20px
+
+	.js_result.bad, .errorMsg, .js_alert_user-data
+		font-size: 13px
+		line-height: 16px
+		color: #FC1E05
+		margin-bottom: 15px
+	
+	.input__show
+		position: relative
+		display: block
+
+	.input__show-password
+		position: absolute
+		display: flex
+		right: 0
+		top: 0
+		justify-content: center
+		align-items: center
+		width: 46px
+		height: 46px
+
+		&.active
+
+			.icon__eye-show
+				display: block
+				fill: $orange
+
+			.icon__eye-hide
+				display: none
+
+
+		svg
+			display: none
+			width: 15px
+			height: 15px
+			fill: #8E8E8E
+
+			&.icon__eye-hide
+				display: block
+
+	.auth_form-forgot
+		display: none
+
+		form
+			display: none
+
+	.auth_form-mail
+		display: none
+
+	.auth_form-type
+		display: flex
+
+		label
+			display: block
+			cursor: pointer
+
+		label + label
+			margin-left: 25px
+
+		input
+			position: absolute
+			opacity: 0
+			width: 0
+			height: 0
+
+			&:checked + span
+
+				&:after
+					content: ''
+					background: #ff5722
+					width: 7px
+					height: 7px
+					border-radius: 50%
+					display: block
+					position: absolute
+					top: 6px
+					left: 4px
+
+		span
+			display: flex
+			align-items: center
+			position: relative
+
+			&::before
+				content: ''
+				margin-right: 5px
+				border: 1px solid #E5E5E5
+				width: 15px
+				height: 15px
+				border-radius: 50%
+				display: block
+
+	.auth__action
+		display: flex
+		justify-content: space-between
+		font-size: 13px
+
+		label
+			display: block
+			cursor: pointer
+
+		label + label
+			margin-left: 25px
+
+		input
+			position: absolute
+			opacity: 0
+			width: 0
+			height: 0
+
+			&:checked + span
+
+				&:after
+					content: ''
+					background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.3173 0.557396C14.3755 0.615454 14.4217 0.684423 14.4532 0.760354C14.4847 0.836286 14.5009 0.917687 14.5009 0.999897C14.5009 1.08211 14.4847 1.16351 14.4532 1.23944C14.4217 1.31537 14.3755 1.38434 14.3173 1.4424L5.56731 10.1924C5.50925 10.2506 5.44029 10.2968 5.36435 10.3283C5.28842 10.3598 5.20702 10.376 5.12481 10.376C5.0426 10.376 4.9612 10.3598 4.88527 10.3283C4.80934 10.2968 4.74037 10.2506 4.68231 10.1924L0.307313 5.8174C0.189954 5.70004 0.124023 5.54087 0.124023 5.3749C0.124023 5.20893 0.189954 5.04975 0.307313 4.9324C0.424671 4.81504 0.583843 4.74911 0.749813 4.74911C0.915783 4.74911 1.07495 4.81504 1.19231 4.9324L5.12481 8.86615L13.4323 0.557396C13.4904 0.499192 13.5593 0.453014 13.6353 0.421506C13.7112 0.389998 13.7926 0.373779 13.8748 0.373779C13.957 0.373779 14.0384 0.389998 14.1144 0.421506C14.1903 0.453014 14.2593 0.499192 14.3173 0.557396Z' fill='%23FF5722'/%3E%3C/svg%3E%0A")
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					width: 22px
+					height: 22px
+					border-radius: 50%
+					display: block
+					position: absolute
+					top: 0px
+					left: 1px
+
+		span
+			display: flex
+			align-items: center
+			position: relative
+
+			&::before
+				content: ''
+				margin-right: 6px
+				border: 1px solid #E5E5E5
+				width: 22px
+				height: 22px
+				border-radius: 4px
+				display: block
+
+.registration_form
+	background: #FFFFFF
+	border-radius: 4px
+	width: 100%
+	max-width: 595px
+	padding: 50px 108px
+	margin-left: auto
+	margin-right: auto
+
+	label
+		margin-bottom: 15px
+		display: block
+
+	.label_title
+		font-size: 13px
+		line-height: 16px
+		color: #8E8E8E
+		margin-bottom: 11px
+		display: block
+	
+	input[type=text], input[type=password]
+		background: #FFFFFF
+		border: 1px solid rgba(0, 0, 0, 0.1)
+		border-radius: 4px
+		height: 46px
+		padding-left: 17px
+		padding-right: 17px
+		font-family: $base-font-family
+		font-size: 15px
+
+	.button
+		height: 46px
+		width: 100%
+
+	.yes_account
+		font-size: 13px
+		line-height: 16px
+		color: #1C1D1F
+		text-align: center
+		margin-bottom: 20px
+
+		a
+			text-decoration: none
+			color: $orange
+
+	h2
+		font-weight: 700
+		font-size: 24px
+		line-height: 29px
+		color: #1C1D1F
+		text-align: center
+		margin-bottom: 20px
+
+	.js_result.bad, .errorMsg, .js_alert_user-data
+		font-size: 13px
+		line-height: 16px
+		color: #FC1E05
+		margin-bottom: 15px
+	
+	.input__show
+		position: relative
+		display: block
+
+	.input__show-password
+		position: absolute
+		display: flex
+		right: 0
+		top: 0
+		justify-content: center
+		align-items: center
+		width: 46px
+		height: 46px
+
+		&.active
+
+			.icon__eye-show
+				display: block
+				fill: $orange
+
+			.icon__eye-hide
+				display: none
+
+
+		svg
+			display: none
+			width: 15px
+			height: 15px
+			fill: #8E8E8E
+
+			&.icon__eye-hide
+				display: block
+
+	.auth_form-type
+		display: flex
+
+		label
+			display: block
+			cursor: pointer
+
+		label + label
+			margin-left: 25px
+
+		input
+			position: absolute
+			opacity: 0
+			width: 0
+			height: 0
+
+			&:checked + span
+
+				&:after
+					content: ''
+					background: #ff5722
+					width: 7px
+					height: 7px
+					border-radius: 50%
+					display: block
+					position: absolute
+					top: 6px
+					left: 4px
+
+		span
+			display: flex
+			align-items: center
+			position: relative
+
+			&::before
+				content: ''
+				margin-right: 5px
+				border: 1px solid #E5E5E5
+				width: 15px
+				height: 15px
+				border-radius: 50%
+				display: block
+	
+	.auth__action
+		display: flex
+		justify-content: space-between
+		font-size: 13px
+
+		label
+			display: block
+			cursor: pointer
+
+		label + label
+			margin-left: 25px
+
+		input
+			position: absolute
+			opacity: 0
+			width: 0
+			height: 0
+
+			&:checked + span
+
+				&:after
+					content: ''
+					background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.3173 0.557396C14.3755 0.615454 14.4217 0.684423 14.4532 0.760354C14.4847 0.836286 14.5009 0.917687 14.5009 0.999897C14.5009 1.08211 14.4847 1.16351 14.4532 1.23944C14.4217 1.31537 14.3755 1.38434 14.3173 1.4424L5.56731 10.1924C5.50925 10.2506 5.44029 10.2968 5.36435 10.3283C5.28842 10.3598 5.20702 10.376 5.12481 10.376C5.0426 10.376 4.9612 10.3598 4.88527 10.3283C4.80934 10.2968 4.74037 10.2506 4.68231 10.1924L0.307313 5.8174C0.189954 5.70004 0.124023 5.54087 0.124023 5.3749C0.124023 5.20893 0.189954 5.04975 0.307313 4.9324C0.424671 4.81504 0.583843 4.74911 0.749813 4.74911C0.915783 4.74911 1.07495 4.81504 1.19231 4.9324L5.12481 8.86615L13.4323 0.557396C13.4904 0.499192 13.5593 0.453014 13.6353 0.421506C13.7112 0.389998 13.7926 0.373779 13.8748 0.373779C13.957 0.373779 14.0384 0.389998 14.1144 0.421506C14.1903 0.453014 14.2593 0.499192 14.3173 0.557396Z' fill='%23FF5722'/%3E%3C/svg%3E%0A")
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					width: 22px
+					height: 22px
+					border-radius: 50%
+					display: block
+					position: absolute
+					top: 0px
+					left: 0px
+
+		span
+			display: flex
+			align-items: center
+			position: relative
+
+			&::before
+				content: ''
+				margin-right: 6px
+				border: 1px solid #E5E5E5
+				width: 22px
+				height: 22px
+				border-radius: 4px
+				display: block
